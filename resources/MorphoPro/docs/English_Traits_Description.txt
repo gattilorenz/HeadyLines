@@ -1,0 +1,58 @@
+#################### ENGLISH TRAITS DESCRIPTION ####################
+
+A. Main lexical categories (lexical_category)
+  [n]      (noun)
+  [pn]     (proper name)
+  [v ]     (verb)
+  [adj]    (adjective)
+  [art]    (article)
+  [pron]   (pronoun)
+  [adv]    (adverb)
+  [conj]   (conjuntion)
+  [prep]   (preposition)
+  [inter]  (interjection) 
+
+B.  Features associated with each lexical category
+
+(Features between parenthesis are optional)
+
+noun:  number=
+proper noun: [] % aggiungero` il numero
+article: []
+verb: mood=, tense=, (num_pers=)
+adjective:  grade=
+article: []
+pronoun: []
+adverb: []
+conjuntion: []
+preposition: []
+interjection: []
+
+
+C.  Values appropriate for each feature
+
+
+number=
+   [sing] (singular) - will become sg
+   [plur] (plural) - will become pl
+   [_]  (either singular or plural)
+
+num_pers=
+   [sing3]
+   [no3sing]
+
+grade=
+   [zero] (positive) will become pst
+   [comp] (comparative)
+   [sup]  (superlative)
+
+mood=
+   [indic]   (indicative)
+   [infin]   (infinite)
+   [part]  (participle) 
+   [gerund]   (gerund)
+   
+tense=
+   [pres]  (present) 
+   [past]  (past)
+

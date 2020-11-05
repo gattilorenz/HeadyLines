@@ -1,0 +1,43 @@
+AGGIORNAMENTO DELL'AUTOMA PER IL TRATTAMENTO DELL"ANALISI MORFOLOGICA
+===============================================
+
+L'eseguibile fstmc (che sta per FST Morphology Compiler) server per creare un automa.
+
+fstmc [-d] [-f <input file>] <automa>
+
+<Automa> sta per il nome del file dove sarà codificato l'automa compilato.
+Con il parametro -f, i dati vengono letti da file, altrimenti legge lo stdin.
+Il formato d'ingresso e' semplice: 
+
+    forma lemma[+caratteristica1[+caratteristica2[...]]]
+
+Invece del '+', si può usare virgole o semplicemente spazi per separare le caratteristiche. 
+Un'entrata (cioè una forma con l'analisi) occupa una riga.
+Vedere l'esempio di input test.txt.
+
+L'opzione -d (sta per "dump" o "debug") e stampa la struttura dell'automa che risulta. 
+Attenzione che il dump puo' diventare grande (da usare con cautela, preferibilmente con file piccoli).
+
+===============================================
+
+L'eseguibile fstan (FST Analyser) fa analisi/sintesi usando l'automa compilato.
+fstan [-a | -s] [-f <input file>]  [-o <output file>] <automa>
+
+Funzione degli switch:
+
+-a - fare l'analisi (forma => lemma + caratteristiche) 
+-s - fare la sintesi (lemma + caratteristiche => forma)
+
+-f <input file> - leggere l'input dal file. Se non specificato, l'input legge da stdin. 
+Una riga corrisponde a una parola.
+
+===============================================
+
+L'eseguibile fstmerge permette di compilare più parti del lessico globale separatamente, e poi unirli un un automa solo. Per esempio si possono compilare i verbi in un lessico separato (ad esempio v.asf), poi i sostantivi
+(s.asf), gli aggettivi (a.asf) e tutto il resto (resto.asf). Dopodiche' basterà chiamare:
+
+fstmerge [-v] v.asf,s.asf,a.asf,resto.asf full.asf
+
+-v sta per 'verbose'
+
+Il primo parametro è una lista di automi (separati da virgole SENZA SPAZI!), il secondo è il nome dell'automa risultante.

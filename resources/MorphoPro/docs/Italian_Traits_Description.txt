@@ -1,0 +1,134 @@
+#################### ITALIAN TRAITS DESCRIPTION ####################
+I nomi dei tratti morphologici sono seguiti da =.
+I valore possibili per i tratti sono tra parentesi quadra.
+Nella maggior parte dei casi i nomi dei valori corrispondono a quelli
+consigliati dalle specifiche morfologiche EAGLES per l'Italiano. In
+alcuni casi (tutti segnalati) la versione corrente di MorphoPro
+produce un valore diverso da quello specificato qui. Verranno
+aggiornati al piu` presto.
+==============================
+MorphoPro Morphological features
+
+A. Main lexical categories (lexical_category)
+[n] (noun)
+[pn] (proper name)
+[v ] (verb)
+[adj] (adjective)
+[art] (article)
+[pron] (pronoun)
+[adv] (adverb)
+[conj] (conjuntion)
+[prep] (preposition)
+[inter] (interjection)
+[punc] (punctuation)
+[mwel] (element of a fixed multiword)
+
+B. Features associated with each lexical category
+
+(Features between parenthesis are optional)
+
+noun: gender=, number=, (noun_class=)
+proper noun: gender=, number=, (proper_noun_class=)
+article: gender=, number=
+verb: mood=, tense=, gender=, person=, number=
+adjective: gender=, number=, grade=, (adjective_class=)
+article: gender=, number=
+pronoun: case=, gender=, person=, number=, (pronoun_class=)
+adverb: []
+conjuntion: []
+preposition: []
+interjection: []
+punctuation: []
+multiword element: position=, mw_lexical_category=
+
+
+C. Values appropriate for each feature
+
+gender=
+[m] (masculin)
+[f] (feminine)
+[_] (either masculin or feminine)
+[nil] (undefined)
+
+number=
+[sg] (singular) - currently sing
+[pl] (plural) - currently plur
+[_] (either singular or plural)
+[nil] (undefined)
+
+person=
+[1] (first)
+[2] (second)
+[3] (second)
+[_] (either first or second or third)
+[nil] (undefined)
+
+grade=
+[pst] (positive)
+[comp] (comparative)
+[sup] (superlative)
+
+mood=
+[ind] (indicative)- currently indic
+[sub] (subjunctive) - currently cong
+[cond] (conditional)
+[impr] (imperative) - currently imp
+[inf] (infinite) - currently infinito
+[part] (participle)
+[ger] (gerund) - currently gerundio
+
+tense=
+[pres] (present)
+[impf] (imperfect) - currently imperf
+[fut] (future)
+[past] (past) - currently pass
+
+case=
+[nom] (nominative)
+[acc] (accusative)
+[dat] (dative)
+[accdat] (either accusative or dative)
+[loc] (locative)
+
+position=
+[1] (first)
+[2] (second)
+[3] (third)
+
+noun_class=
+[foreign] (foreign word)
+[abb] (abbreviation)
+
+proper_noun_class=
+[p] (person name)
+[c] (city name)
+[g] (geographical area name)
+
+
+adjective_class=
+[dem] (demostrative) - currently dim
+[indf] (indefinite) - currently ind
+[int] (interrogative)
+[neg] (negative)
+[poss] (possessive)
+[rel] (relative)
+[excl] (exclamative) - currently escl
+[comp] (comparative)
+[num] (numeral)
+
+pronoun_class=
+[clit] (clitic)
+[dem] (demostrative) - currently dim
+[indf] (indefinite) - currently ind
+[int] (interrogative)
+[neg] (negative)
+[poss] (possessive)
+[rel] (relative)
+[num] (numeral)
+[pers] (strong personal pronouns) - currently strong
+
+mw_lexical_category=
+[n] (noun)
+[adj] (adjective)
+[adv] (adverb)
+[conj] (conjunction)
