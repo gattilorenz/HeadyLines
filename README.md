@@ -1,9 +1,6 @@
 # HeadyLines
 Java code for Heady-Lines
 
-File resources/w2v_semantic_space.ser is missing (due to GitHub space limitation).
-For now I uploaded it at https://mega.nz/file/wYoWgL4Y#56rDnbhNd-JaRyuiln4cr-gZRyDxRQyH2jrrxFrvM-4
-
 References:
 
     @inproceedings{gatti2016heady,
